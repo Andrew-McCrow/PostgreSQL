@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <p>Check the terminal for usernames!</p>
+    <ul>
+      <% usernames.forEach(user => { %>
+        <li><%= user.username %></li>
+      <% }) %>
+    </ul>
+    <a href="/new">Add a Username</a>
+  </body>
+</html>
