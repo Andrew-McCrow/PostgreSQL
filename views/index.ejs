@@ -2,11 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
+    <title>PostgreSQL Practice</title>
   </head>
   <body>
-    <h1>Home</h1>
-    <p>Check the terminal for usernames!</p>
+    <h1>Usernames</h1>
+
+    <form method="GET" action="/">
+      <input type="text" name="search" value="<%= search %>" placeholder="Search usernames..." />
+      <button type="submit">Search</button>
+    </form>
+
     <ul>
       <% usernames.forEach(user => { %>
         <li><%= user.username %></li>
